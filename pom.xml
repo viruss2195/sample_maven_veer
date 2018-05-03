@@ -51,9 +51,19 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			
 			</plugin>
 		</plugins>
+
+
 	</build>
+	<distributionManagement>
+       <repository>
+         <id>internal.repo</id>
+         <name>Internal repo</name>
+         <url>file:///home/veer/tools/src/tempdir</url>
+       </repository>
+   </distributionManagement>
 
 
 </project>
